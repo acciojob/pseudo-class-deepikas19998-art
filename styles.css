@@ -1,1 +1,27 @@
-/*  your css code here. If applicable */
+/* Style for the main container */
+#container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+/* Insert content before the container content */
+#container::before {
+    content: "This is before content. ";
+    color: #f00;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Insert content after the container content */
+#container::after {
+    content: " This is after content.";
+    color: #f00;
+    font-size: 20px;
+    display: block;
+    margin-top: 10px;
+}
+
